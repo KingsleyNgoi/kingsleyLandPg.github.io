@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <!-- 
+        MailChimp
+            - https://mailchimp.com/ 
+            - Marketing, Automation & Email Platform
+                > Be able to put website online.
+                > to have people to click on our startup website 
+                > to have a way for people to submit their email address
+                  for our startup website to send them email asking for purchases
+    -->
+    <!-- 
+        Content Delivery Network, CDN 
+        * refers to a geographically distributed group of servers which work together to provide fast delivery of    Internet content.
+        * allows for the quick transfer of assets needed for loading Internet content including HTML pages, javascript files, stylesheets, images, and videos.
+        * may also help protect websites against some common malicious attacks, such as Distributed Denial of Service (DDOS) attacks.
+        * does not host content and can’t replace the need for proper web hosting, it does help cache content at the network edge, which improves website performance. 
+        * By utilizing caching to reduce hosting bandwidth, helping to prevent interruptions in service, and improving security, CDNs are a popular choice to relieve some of the major pain points that come with traditional web hosting.
+    -->
+    <!-- Get the Code Sample from Bootstrap Site -->
+    <!-- 
+        [Bootstrap]
+        * The Flex Container
+            - its main-axis is the same as the block-axis. 
+            - The main-start & main-end points 
+              are the same as the before and after points of the writing-mode,
+            - expands items to fill available free space or
+              shrinks them to prevent overflow. 
+            - Most importantly, the flexbox layout 
+              is direction-agnostic as opposed to the regular layouts 
+              (block is vertically-based & inline is horizontally-based).
+            - .column-reverse behaves the same as column
+              but the main-start & main-end are opposite to the content direction.
+
+        * The Flexible Box Layout Module, d-flex 
+            - is used for designing the flexible &
+              responsive layout structure. 
+            - the d-flex class is used to create a simple flexbox container.
+
+        * Flex Column, flex-column
+            - qickly manage the layout, alignment, & 
+              sizing of grid columns, navigation, components, & 
+              more with a full suite of responsive flexbox utilities. 
+            - for more complex implementations, custom CSS may be necessary.
+    -->
+    <!-- Get the Code Sample from Bootstrap Site -->
+    <!--
+        Bootstrap's grid system allows up to 12 columns across the page.
+        * Grid Classes
+            - xs (for phones)
+            - sm (for tablets)
+            - md (for desktops)
+            - lg (for larger desktops)
+            - xl (for extra large monitors)
+            => col-lg- stands for column extra large    ≥ 1200px (max 1140px)
+            => col-lg- stands for column large          ≥ 992px  (max 960px)
+            => col-md- stands for column medium         ≥ 768px  (max 720px)
+            => col-sm- stands for column small          ≥ 576px  (max 540px)
+            => col-xs- stands for column extra small    < 576px  (none auto)
+        * Grid System Rules
+            - Rows must be placed within 
+              a .container (fixed-width) 
+              or .container-fluid (full-width) 
+              for proper alignment and padding.
+            - Use rows to create horizontal groups of columns
+            - Content should be placed within columns, 
+              and only columns may be immediate children of rows
+            - Columns create gutters 
+              (gaps between column content) via padding.
+              That padding is offset in rows for the first and last column 
+              via negative margin on .rows
+            - Grid columns are created by 
+              specifying the num of 12 available columns  wish to span.
+            - Column widths are in percentage, 
+              so are always fluid and  sized relative to their parent element.
+        * No Gutters
+            - Use the <div class="row row-no-gutters"> to 
+              remove the gutters from a row and its columns:
+        * Offset
+            - .col-md-offset-* classes:
+              increase the left margin of a column by * columns:
+        * Push Pull
+            - Change the order of the grid columns with
+              .col-md-push-* and .col-md-pull-* classes
+        * Examples (Mixed Stacking: Mobile, Tablet And Desktop)
+            - get 3 columns starting at 
+              mobile, tablets and scaling to large desktops 
+              (these columns and their nested columns will stack)
+                <div class="row">
+                  <div class="col-xs-7 col-sm-6 col-lg-8">.col-xs-7 .col-sm-6 .col-lg-8</div>
+                  <div class="col-xs-5 col-sm-6 col-lg-4">.col-xs-5 .col-sm-6 .col-lg-4</div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-6 col-sm-8 col-lg-10">.col-xs-6 .col-sm-8 .col-lg-10</div>
+                  <div class="col-xs-6 col-sm-4 col-lg-2">.col-xs-6 .col-sm-4 .col-lg-2</div>
+                </div>
+        * Spacing
+            - Where property is one of:
+                m - sets margin
+                p - sets padding
+                Where sides is one of:
+                    t - sets margin-top or padding-top
+                    b - sets margin-bottom or padding-bottom
+                    l - sets margin-left or padding-left
+                    r - sets margin-right or padding-right
+                    x - sets both padding-left and padding-right or margin-left and margin-right
+                    y - sets both padding-top and padding-bottom or margin-top and margin-bottom
+                    blank - sets a margin or padding on all 4 sides of the element
+                Where size is one of:
+                    0 - sets margin or padding to 0
+                    1 - sets margin or padding to .25rem (4px if font-size is 16px)
+                    2 - sets margin or padding to .5rem (8px if font-size is 16px)
+                    3 - sets margin or padding to 1rem (16px if font-size is 16px)
+                    4 - sets margin or padding to 1.5rem (24px if font-size is 16px)
+                    5 - sets margin or padding to 3rem (48px if font-size is 16px)
+                    auto - sets margin to auto
+                Note: margins can also be negative, by adding an "n" in front of size:
+                    n1 - sets margin to -.25rem (-4px if font-size is 16px)
+                    n2 - sets margin to -.5rem (-8px if font-size is 16px)
+                    n3 - sets margin to -1rem (-16px if font-size is 16px)
+                    n4 - sets margin to -1.5rem (-24px if font-size is 16px)
+                    n5 - sets margin to -3rem (-48px if font-size is 16px)
+    -->
+    <head>
+        <title>Startup</title>
+        <!-- Get the Code Sample from Bootstrap Site -->
+        <!-- Required meta tags -->
+        <!-- 
+            [Bootstrap / Introduction / Responsive meta tag]
+            * viewport
+                - Bootstrap is developed mobile first, 
+                    > a strategy in which we optimize code for mobile devices first 
+                    > and then scale up components as necessary using CSS media queries. 
+                - To ensure proper rendering and touch zooming for all devices, 
+                    > add the responsive viewport meta tag to your <head>.
+        -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+        <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Your own stylesheet -->
+        <link rel="stylesheet" type="text/css" href="css/style_LandingPage.css">
+    </head>
+    
+    <body>
+        <!-- 
+            * h-100 
+                - to make sure the container utilizes the full height of the page.
+        -->
+        <div class="container d-flex align-items-center h-100">
+        
+            <div class="row">
+            <!-- Get the Code Sample from Bootstrap Site -->
+            <!-- Text -->
+            <!-- 
+                [Bootstrap / Utilities / Text]
+                * Text alignment, text-center
+                    - Easily realign text to components with text alignment classes.
+                * Text transform, text-uppercase
+                    - Transform text in components with text capitalization classes.
+            -->
+                <header class="text-center col-12">
+                    <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1>
+                </header>
+           
+                <div class="buffer col-12"></div>
+                
+                <section class="text-center col-12">
+                    <hr>
+                    <!-- Get the Code Sample from Bootstrap Site -->
+                    <!-- Button Trigger Modal -->
+                    <!-- 
+                        [Bootstrap / Components / Button]
+                        * Button, btn btn-danger
+                            - several predefined button styles, each serving its own semantic purpose, 
+                              with a few extras thrown in for more control.
+                        * Button Toggle, data-bs-toggle
+                            - Recommend using a button with the data-bs-target attribute.
+                            - While not recommended from a semantic point of view, 
+                                > can also use a link with the href attribute (and a role="button"). 
+                            - In both cases, the data-bs-toggle="collapse" is required.
+                        * Multiple targets, data-bs-target
+                            - A <button> or <a> can show and hide multiple elements 
+                                > by referencing them with a selector in its href or data-bs-target attribute. 
+                            - Multiple <button> or <a> can show and hide an element 
+                                > if they each reference it with their href or data-bs-target attribute
+                        * Button tags
+                            - The .btn classes are designed to be used with the <button> element. 
+                            - However, you can also use these classes on <a> or <input> elements 
+                                (though some browsers may apply a slightly different rendering).
+                            - When using button classes on <a> elements that are used to trigger in-page functionality 
+                                > (like collapsing content), 
+                                > rather than linking to new pages or sections within the current page, 
+                                > these links should be given a role="button" to appropriately convey 
+                                  their purpose to assistive technologies such as screen readers.
+                    -->
+                    <a href="https://mailchi.mp/ad90024e2e4e/kingsleyngoi_landingpage">
+                        <button class="btn btn-primary btn-xl">Find out more</button>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
